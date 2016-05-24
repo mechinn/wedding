@@ -14,7 +14,7 @@ baseurl: "/wedding" # the subpath of your site, e.g. /blog
 url: "http://mechinn.com/wedding/" # the base hostname & protocol for your site
 
 # Build settings
-markdown: redcarpet
+markdown: kramdown
 highlighter: pygments
 sass:
     sass_dir: _sass
