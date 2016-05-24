@@ -19,3 +19,10 @@ highlighter: rouge
 sass:
     sass_dir: _sass
     style: compressed
+
+gems:
+  - jemoji
+  - jekyll-redirect-from
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
