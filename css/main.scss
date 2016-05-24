@@ -1,0 +1,21 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+@import "style";
+@import "map";
+@import "footer";
+
+body { padding-top: 70px; }
+
+.jumbotron {
+  background-image: $brand-background;
+  background-size: cover;
+  background-position: 0 -50px;
+  color: #fff;
+  @media screen and (min-width: $screen-sm-min) {
+    padding-top:    ($jumbotron-padding * 3);
+    padding-bottom: ($jumbotron-padding * 3);
+  }
+}

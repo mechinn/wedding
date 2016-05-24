@@ -1,0 +1,30 @@
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+    <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script> |
+    <script src="{{ "/js/bootstrap/affix.js" | prepend: site.baseurl }}"></script>
+    <script src="{{ "/js/bootstrap/alert.js" | prepend: site.baseurl }}"></script>
+    <script src="{{ "/js/bootstrap/button.js" | prepend: site.baseurl }}"></script>
+    <script src="{{ "/js/bootstrap/carousel.js" | prepend: site.baseurl }}"></script>
+    <script src="{{ "/js/bootstrap/collapse.js" | prepend: site.baseurl }}"></script>
+    <script src="{{ "/js/bootstrap/dropdown.js" | prepend: site.baseurl }}"></script>
+    <script src="{{ "/js/bootstrap/modal.js" | prepend: site.baseurl }}"></script>
+    <script src="{{ "/js/bootstrap/scrollspy.js" | prepend: site.baseurl }}"></script>
+    <script src="{{ "/js/bootstrap/tab.js" | prepend: site.baseurl }}"></script>
+    <script src="{{ "/js/bootstrap/transition.js" | prepend: site.baseurl }}"></script>
+    <script src="{{ "/js/bootstrap/tooltip.js" | prepend: site.baseurl }}"></script>
+    <script src="{{ "/js/bootstrap/popover.js" | prepend: site.baseurl }}"></script>
+    <script src="{{ "/js/prefixfree.min.js" | prepend: site.baseurl }}"></script>
+    <script src="{{ "/js/main.js" | prepend: site.baseurl }}"></script>
+    {% if page.style %}
+    {% capture stylesheet %}/css/{{ page.style }}.css{% endcapture %}
+    <link rel="stylesheet" href="{{ stylesheet | prepend: site.baseurl }}">
+    {% else %}
+    <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+    {% endif %}
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+</head>
