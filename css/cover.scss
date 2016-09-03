@@ -41,7 +41,7 @@ body {
 .cover-container {
     margin-right: auto;
     margin-left: auto;
-    border-radius( 5px );
+    border-radius: 5px;
     background:rgba(255,255,255,0.5);
     @media (min-width: $screen-sm-min) {
         width: 100%;
