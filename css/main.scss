@@ -7,7 +7,12 @@
 @import "map";
 @import "footer";
 
-body { padding-top: 70px; }
+@import 'https://fonts.googleapis.com/css?family=Playfair+Display+SC';
+
+body { 
+  padding-top: 70px;
+  font-family: 'Playfair Display SC', serif;
+}
 
 .jumbotron {
   background-image: $brand-background;
