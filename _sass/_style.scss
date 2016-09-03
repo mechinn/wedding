@@ -4,3 +4,9 @@ $brand-background: url("../img/banner.jpg");
 $brand-secondary:  darken(#337ab7, 6.5%);
 
 @import "bootstrap";
+
+@import 'https://fonts.googleapis.com/css?family=Playfair+Display+SC';
+
+body {
+  font-family: 'Playfair Display SC', serif;
+}
