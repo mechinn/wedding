@@ -19,7 +19,7 @@ title: Catie's & Mike's Wedding
 email: wedding@mechinn.com
 description: > # this means to ignore newlines until "baseurl:"
   Thank you for joining with us on our special day!
-baseurl: "/" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://doublechinnwedding.com" # the base hostname & protocol for your site
 
 # Build settings
